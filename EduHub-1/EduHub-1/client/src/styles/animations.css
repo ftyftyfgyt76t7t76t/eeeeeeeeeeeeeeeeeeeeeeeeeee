@@ -1,0 +1,36 @@
+/* Animation styles */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.login-bg {
+  background-image: radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.3) 0%, rgba(58, 12, 163, 0.2) 90%);
+}
+
+/* Role selector styling */
+.role-selector input:checked + .role-card {
+  border-color: #4361EE;
+  background-color: rgba(67, 97, 238, 0.1);
+}

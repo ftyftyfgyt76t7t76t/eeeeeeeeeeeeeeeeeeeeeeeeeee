@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduHub - Connect, Learn, Grow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Additional custom styles */
+      .login-bg {
+        background-image: radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.3) 0%, rgba(58, 12, 163, 0.2) 90%);
+      }
+      .form-input:focus {
+        box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.3);
+      }
+      .role-selector input:checked + .role-card {
+        border-color: #4361EE;
+        background-color: rgba(67, 97, 238, 0.1);
+      }
+      .tab-indicator {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="font-inter bg-gray-50 text-gray-800 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
